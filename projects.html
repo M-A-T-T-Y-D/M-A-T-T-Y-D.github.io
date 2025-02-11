@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="carousel-container">
+            <div class="carousel">
+                <div class="slide-container" >
+                    <h2>Wikipedia Name Query</h2>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <img onclick="openLightbox(1)" id="Screenshot" class="slide"  src="Assets/File_Select.png" alt="Project 1">
+                </div>
+
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <a id="github-link" href="https://github.com/M-A-T-T-Y-D/Wikipedia-Name-Query" target="_blank" class="github-btn">View on GitHub</a>
+        </section>
+
+    </main>
+S
+    <main>
+        <section class="carousel-container">
+            <div class="carousel">
+                <div class="slide-container" >
+                    <h2>Github Pages</h2>
+                    <button class="prev" onclick="moveSlide1(-1)">&#10094;</button>
+                    <img onclick="openLightbox(2)" id="Screenshot1" class="slide"  src="Assets/githubpages 1.png" alt="Project 1">
+                </div>
+
+            </div>
+            <button class="next" onclick="moveSlide1(1)">&#10095;</button>
+
+            <a id="github-link" href="https://M-A-T-T-Y-D.github.io" target="_blank" class="github-btn">View on GitHub</a>
+        </section>
+
+        
+    </main>
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" onclick="closeLightbox()">✖</button>
+        <img id="lightbox-img" src="" alt="Enlarged Screenshot" />
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+    <script src="js/carousel.js" defer></script>
+</body>
+</html>
+</html>

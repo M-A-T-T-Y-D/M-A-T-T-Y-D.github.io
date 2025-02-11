@@ -3,44 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="CSS/General.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <title>Portfolio Dashboard</title>
+    <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
     <header>
-        <div class="topnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Contact.html">Contact</a>
-            <a href="github.com/M-A-T-T-Y-D/Wikipedia-Name-Query" target="_blank">GitHub Repo</a>
-        </div>
-        <div class="hero">
-            <h1>Wikipedia Name Query</h1>
-            <p>A Python application to retrieve information on people from Wikipedia.</p>
-        </div>
+        <h1>Matthew Davis</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="overview">
-        <h2>Contact</h2>
-        <li>
-            Email: BaybrookMatthew@gmail.com
-        </li>
-        <li>
-            Phone: N/A
-        </li>
-        <li>
-            Instagram: N/A
-        </li>
-        <li>
-            Youtube: N/A
-        </li>
-        <li>
-            X: N/A
-        </li>
-        <li>
-            LinkedIn: <a href="https://www.linkedin.com/in/matthew-davis-76361228a">Here</a>
-        </li>
-        
-    </section>
+    <main>
+    <section id="contactPage">
+          <div id="form-container">
+            <form id="contact-form" >
+                <label class="form-label" for="full-name">Full name:</label><br>
+                <input class="input" placeholder="Name" class="form-input" type="text" required>
+                <br>
+                <label class="form-label" for="email-address">Email address:</label> <br>
+                <input class="input" placeholder="Email" class="form-input" type="email" required>
+                <br>
+                <label class="form-label" for="company-name">Company name (optional):</label><br>
+                <input class="input"  placeholder="Company" class="form-input" type="text">
+                <br>
+                <label class="form-label" for="message">Your message:</label><br>
+                <textarea class="input"  placeholder="Message" class="form-textarea" required></textarea>
+                <br>
+                <br>
+              <button id="form-button" type="submit">Send message</button>
+            </form>
+          </div>
+      </section>
+    </main>
+    <div class="static">
+    </div>
+    <footer>
+        <p>&copy; 2025 Portfolio Dashboard</p>
+    </footer>
 </body>
 </html>

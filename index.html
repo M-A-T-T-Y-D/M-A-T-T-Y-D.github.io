@@ -1,166 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Wikipedia Name Query</title>
-        <link rel="stylesheet" href="CSS/General.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-            rel="stylesheet""/>
-    </head>
-
-    <body>
-        <header>
-            <div class="topnav">
-                <a class="active" href="index.html">Home</a>
-                <a href="About.html">About</a>
-                <a href="Contact.html">Contact</a>
-                <a href="https://github.com/M-A-T-T-Y-D/Wikipedia-Name-Query"
-                    target="_blank">GitHub Repo</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Dashboard</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <div class="header">
+        <img id="Logo"src="./Assets/Logo.png">
+        <h1>Wikipedia-Name-Query</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Examples</a></li>
+                <li><a href="contact.html">Github Repo</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <section class="hero">
+            <h2>Welcome to My Portfolio Dashboard</h2>
+            <p>Showcasing my projects</p>
+        </section>
+        
+        <section class="projects">
+            <h2>Featured Project</h2>
+            <div class="project">
+                <h3>Wikipedia Name Query</h3>
+                <p>This project allows users to query Wikipedia for information based on a given name.</p>
+                <button class="try_button"href="https://github.com/M-A-T-T-Y-D/Wikipedia-Name-Query">Try It Now</button>
             </div>
-            <div class="hero">
-                <h1>Wikipedia Name Query</h1>
-                <p>
-                    A Python application to retrieve biographical information
-                    from
-                    Wikipedia.
-                </p>
-            </div>
-        </header>
-
-        <main>
-            <section id="overview">
-                <h2>Overview</h2>
-                <p>
-                    The <strong>Wikipedia Name Query</strong> is a Python
-                    application that
-                    retrieves biographical information about people from
-                    Wikipedia,
-                    including their full name, date of birth, date of death, and
-                    age. It
-                    features both a <strong>Text User Interface (TUI)</strong>
-                    and a
-                    <strong>Command Line Interface (CLI)</strong> for easy
-                    interaction.
-                </p>
-            </section>
-
-            <section id="features">
-                <h2>Features</h2>
-                <ul>
-                    <li>Query Wikipedia for biographical information</li>
-                    <li>
-                        Interactive Text User Interface (TUI) powered by
-                        <code>textual</code>
-                    </li>
-                    <li>Command Line Interface (CLI) for quick queries</li>
-                    <li>Local database storage for queried names</li>
-                    <li>Batch processing support</li>
-                    <li>Dark/Light theme toggle in TUI</li>
-                </ul>
-            </section>
-
-            <section id="installation">
-                <h2>Installation</h2>
-                <p>To install and run the application, follow these steps:</p>
-                <ol>
-                    <li>
-                        Clone the repository:
-                        <pre><code>
-                        git clone https://github.com/yourusername/Wikipedia-Name-Query.git
-                        cd Wikipedia-Name-Query
-                    </code></pre>
-                    </li>
-                    <li>
-                        Install dependencies:
-                        <pre><code>pip install -r requirements.txt</code></pre>
-                    </li>
-                    <li>
-                        Run the TUI:
-                        <pre><code>textual run App.py</code></pre>
-                    </li>
-                </ol>
-            </section>
-
-            <section id="usage">
-                <h2>Usage</h2>
-                <h3>Text User Interface (TUI)</h3>
-                <p>Launch the TUI using:</p>
-                <pre><code>textual run App.py</code></pre>
-                <p>
-                    Use the interface to add, view, and manage queries. Toggle
-                    themes,
-                    import names from files, and more.
-                </p>
-                <h3>Command Line Interface (CLI)</h3>
-                <p>Use the CLI for quick queries. Example commands:</p>
-                <pre><code>
-                # Get age
-                python -m wikipedia_name_query age --Name "Albert Einstein"
-
-                # Get all information
-                python -m wikipedia_name_query Output --Name "Albert Einstein"
-            </code></pre>
-            </section>
-
-            <section id="screenshots">
-                <h2>Screenshots</h2>
-                <div class="gallery-container">
-                    <div class="gallery">
-                        <img
-                            src="Assets/Main_Menu.png"
-                            alt="TUI Screenshot"
-                            onclick="openLightbox(this.src)" />
-                        <div class="desc">Main Menu</div>
-                    </div>
-                    <div class="gallery">
-                        <img
-                            src="Assets/Names.png"
-                            alt="Add Name Screenshot"
-                            onclick="openLightbox(this.src)" />
-                        <div class="desc">Adding Names</div>
-                    </div>
-                    <div class="gallery">
-                        <img
-                            src="Assets/File_Select.png"
-                            alt="File Select Screenshot"
-                            onclick="openLightbox(this.src)" />
-                        <div class="desc">File Selection</div>
-                    </div>
-                    <div class="gallery">
-                        <img
-                            src="Assets/View.png"
-                            alt="View Data Screenshot"
-                            onclick="openLightbox(this.src)" />
-                        <div class="desc">Viewing Data</div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="lightbox" id="lightbox">
-                <button class="close-btn" onclick="closeLightbox()">✖</button>
-                <img id="lightbox-img" src alt="Enlarged Screenshot" />
-            </div>
-
-            <section id="contributing">
-                <br />
-                <h2>Contributing</h2>
-                <p>
-                    Contributions are welcome! Fork the repository, create a
-                    feature
-                    branch, and submit a pull request.
-                </p>
-                <a
-                    href="https://github.com/M-A-T-T-Y-D/Wikipedia-Name-Query"
-                    class="button"
-                    target="_blank">View on GitHub</a>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2025 Matthew Davis liscensed under the MIT License.</p>
-        </footer>
-        <script src="Script/Lightbox.js"></script>
-    </body>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Portfolio Dashboard</p>
+    </footer>
+</body>
 </html>
