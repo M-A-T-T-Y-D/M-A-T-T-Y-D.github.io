@@ -153,3 +153,12 @@ nav {
 .next:hover {
     opacity: 80%;
 }
+#github-link {
+    background-color: grey;
+    border: 0px;
+    border-radius: 2px;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,5 +1,6 @@
 let index = 0;
 let index2 = 0;
+
 // Open Lightbox
 function openLightbox(slideNumber) {
     var screenshot;
@@ -28,6 +29,7 @@ function openLightbox(slideNumber) {
   });
 
 function moveSlide(count) {
+    
     index += count;
     switch (index) {
     case -1:
