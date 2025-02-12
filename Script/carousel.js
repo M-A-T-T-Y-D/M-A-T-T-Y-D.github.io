@@ -52,27 +52,3 @@ function moveSlide(count) {
     }
 }
 
-function moveSlide1(count) {
-    index2 += count;
-    switch (index2) {
-    case -1:
-        moveSlide1(4);
-        break;
-    case 0:
-        document.getElementById("Screenshot1").src = "Assets/githubpages 1.png"
-        break;
-    case 1:
-        document.getElementById("Screenshot1").src = "Assets/githubpages 2.png"
-        break;
-    case 2:
-        document.getElementById("Screenshot1").src = "Assets/github pages 3.png"
-        break;
-    case 3:
-        document.getElementById("Screenshot1").src = "Assets/github pages 4.png"
-        break;
-    
-    case 4:
-        moveSlide1(-4);
-        break;
-    }
-}

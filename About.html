@@ -3,53 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Dashboard</title>
+    <title>Wikipedia-Name-Query</title>
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Matthew Davis</h1>
-        <nav>
+    <div class="header">
+        
+    <h1 id="title">Wikipedia-Name-Query</h1>
+    <nav>
+  
+            <button class="nav-button" onclick="window.location.replace('index.html')">Home</button>
+            <button class="nav-button" onclick="window.location.replace('About.html')">About</button>
+            <button class="nav-button" onclick="window.location.replace('Examples.html')">Examples</button>
+            <button class="nav-button" href="Contact.html">Github Repo</button>
+   
+    </nav>
+    <img id="Logo"src="./Assets/Logo.png">
+</div>
+    <div class="text-container">
+        <div class="text-card">
+            <h2>Introduction</h2>
+            <p>This project allows users to query DBpedia using a person's name to retrieve key biographical information.</p>
+        </div>
+        <div class="text-card">
+            <h2>Core Technologies</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><strong>Textual</strong> – for the user interface</li>
+                <li><strong>SQLite3</strong> – for database storage</li>
+                <li><strong>SPARQLQuery</strong> – to fetch data from DBpedia</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>About Me</h2>
-            <p>Hello! I'm Matthew Davis, a passionate and driven 18-year-old with a love for coding and innovation. Born on February 4th, 2007, I've always been fascinated by the world of technology and its endless possibilities.</p>
-            <p>Currently, I'm studying Software Development T Level, which has given me a solid foundation in programming languages, software development methodologies, and problem-solving skills. My ultimate goal is to pursue a degree in Computer Science at the University of Lincoln, where I can further develop my skills and knowledge in the field.</p>
-            <p>When I'm not coding, you can find me exploring new hobbies, such as photography, gaming, or playing music. I'm always looking for new challenges and opportunities to learn and grow, both personally and professionally.</p>
-        </section>
-        <section class="interests">
-            <h2>My Interests</h2>
-            <ul>
-                <li>Coding and software development</li>
-                <li>Photography and videography</li>
-                <li>Gaming and esports</li>
-                <li>Music and audio production</li>
-                <li>Traveling and exploring new places</li>
-            </ul>
-        </section>
-        <section class="goals">
-            <h2>My Goals</h2>
-            <ul>
-                <li>Pursue a degree in Computer Science at the University of Lincoln</li>
-                <li>Develop a successful career in software development</li>
-                <li>Start my own tech-related business</li>
-                <li>Travel to new countries and experience different cultures</li>
-                <li>Continuously learn and improve my skills in coding and software development</li>
-            </ul>
-        </section>
-    </main>
-    <div class="static">
+        </div>
     </div>
-    <footer>
-        <p>&copy; 2025 Portfolio Dashboard</p>
-    </footer>
+    <div class="text-container">
+        <div class="text-card">
+            <p> The code querys dbpedia using a persons name and retreives their full name, date of birth, and date of death. this then stores the data in a list and calculates the persons age. the data is then displayed on the UI in a table format. The UI is a data table with buttons around the edge that allows the user to input names, files and delete data and all the data is stored in a sqlite database.</p>
+        </div>
+    </div>
 </body>
 </html>
