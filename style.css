@@ -36,12 +36,16 @@ nav {
 .nav-button {
     background-color: grey;
     border-radius: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     width: 85px;
     font-size: small;
     height: 40px;
     color: white;
     border: 0px;
     font-size: 15px;
+    text-decoration: none;
 }
 #title {
     position: relative;
